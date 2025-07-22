@@ -3,10 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estyles.css">
-    <title>To Dp Javascript</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>To Do Javascript</title>
 </head>
 <body>
+    <div id="tasks-container">
+        <div id="taks-header">
+        <h2>Salve a sua Próxima tarefa</h2>
+        <form action="" id="add-task-form">
+            <input type="text" id="task-title" placeholder="O que você vai fazer ?">
+            <button id="add-btn" type="submit">
+            <ion-icon name="add-outline"></ion-icon>
+            </button>
+        </form>
+        </div>
+        <div id="task-list-container">
+        <h2>Estas são as suas Tarefas</h2>
+        <ul id="task-list">
+            <li class="task-box"> <span class="task-title">teste</span>
+            <ion-icon class="done-btn" name="checkmark-outline"></ion-icon>
+            <ion-icon class="remove-btn" name="close-outline"></ion-icon>
+            </li>
+
+            <li class="task-box"> <span class="task-title">teste</span>
+            <ion-icon class="done-btn" name="checkmark-outline"></ion-icon>
+            <ion-icon class="remove-btn" name="close-outline"></ion-icon>
+            </li>
+            
+            <li class="task-box"> <span class="task-title">teste</span>
+            <ion-icon class="done-btn" name="checkmark-outline"></ion-icon>
+            <ion-icon class="remove-btn" name="close-outline"></ion-icon>
+            </li>
+        </ul>
+        </div>
+    </div>
+
+
+
+
+
     <script src="js/scripts.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
